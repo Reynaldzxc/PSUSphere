@@ -64,6 +64,10 @@
                     
                      <td>
                         <a href="{% url 'organization-update' object.id %}">Edit</a>
+                        <a href="{% url 'organization-delete' object.id %}"
+                          class="text-danger">
+                          Delete 
+                         </a>    
                       </td>
                      {% empty %}
 <tr>
